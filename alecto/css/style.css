@@ -1,80 +1,25 @@
-/*--------------------------------------------  fonts  -------------------------------------*/
-@font-face {
-  font-family: 'icomoon';
-  src:url('../fonts/icons/icomoon.eot?7c1w93');
-  src:url('../fonts/icons/icomoon.eot?7c1w93#iefix') format('embedded-opentype'),
-    url('../fonts/icons/icomoon.ttf?7c1w93') format('truetype'),
-    url('../fonts/icons/icomoon.woff?7c1w93') format('woff'),
-    url('../fonts/icons/icomoon.svg?7c1w93#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-[class^="icon-"], [class*=" icon-"] {
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-activity:before {
-  content: "\e902";
-}
-.icon-atom:before {
-  content: "\e903";
-}
-.icon-branding:before {
-  content: "\e904";
-}
-.icon-design:before {
-  content: "\e905";
-}
-.icon-graduation-cap:before {
-  content: "\e906";
-}
-.icon-left-arrow:before {
-  content: "\e907";
-}
-.icon-logo-footer:before {
-  content: "\e908";
-}
-.icon-portfolio:before {
-  content: "\e909";
-}
-.icon-right-arrow:before {
-  content: "\e90a";
-}
-.icon-rocket:before {
-  content: "\e90b";
-}
-.icon-search:before {
-  content: "\e900";
-}
-.icon-menu:before {
-  content: "\e901";
-}
-.icon-cart:before {
-  content: "\e90c";
-}
 
 /*--------------------------------------------  wrapper  -------------------------------------*/
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+}
+
 .wrapper {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 h2 {
-    font-size: 60px;
+    font-family: "RalewayExtraLight";
+    font-size: 6rem;
     color: #576671;
     padding-bottom: 36px;
+    position: relative;
 }
 
 .icon {
@@ -85,7 +30,11 @@ h2 {
     background: white;
     color: #17daa3;
     float: left;
-    margin-right: 30px; 
+    margin-right: 28px; 
+}
+
+p {
+    font-family: "ProximaNovaRegular";
 }
 
 /*---------------------------------------------  header  --------------------------------------*/
@@ -97,7 +46,7 @@ h2 {
 }
 
 .logo-name {
-    font-size: 34px;
+    font-size: 3.4rem;
     color: white;
     float: left;
 }
@@ -107,20 +56,24 @@ h2 {
 }
 
 .nav {
-    float: right;
+    overflow: hidden;
+    text-align: right;
+    padding-top: 10px;
 }
+
 
 .nav li {
     display: inline-block;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 1.4rem;
     padding-left: 50px
 }
 
-.nav a, .template a {
+.nav a {
     text-decoration: none;
     color: white;
+    font-family: "RalewayBold"
 }
 
 .nav a:hover {
@@ -148,14 +101,14 @@ h2 {
 }
 
 .slider h1 {
-    font-size: 60px;
+    font-family: "RalewayThin";
+    font-size: 6rem;
     font-weight: 100;
     padding-bottom: 30px;
 }
 
-.slider span,
-.template span {
-    font-weight: bold;
+.slider span, .template span {
+    font-family: "RalewayBold";
 }
 
 .slider a:hover {
@@ -163,7 +116,7 @@ h2 {
 }
 
 .slider p {
-    font-size: 24px;
+    font-size: 2.4rem;
     padding-bottom: 66px;
 }
 
@@ -174,18 +127,12 @@ h2 {
     text-align: center;
 }
 
-.line {
-    border-top: 1px solid #17daa3;
-    width: 30px;
-    margin: 0 auto;
-}
-
 .about-us p,
 .our-services p,
 .team p,
 .pricing p {
     padding: 36px 0 135px;
-    font-size: 18px;
+    font-size: 1.8rem;
     color: #87949e;
 }
 
@@ -196,8 +143,8 @@ h2 {
 }
 
 .about-us h3 {
-    font-size: 30px;
-    margin: 82px auto 36px;
+    font-size: 3rem;
+    margin: 55px auto 0;
 }
 
 .about-us .button, 
@@ -235,7 +182,7 @@ h2 {
 .about-us-post i {
     display: inline-block;
     padding-top: 55px;
-    font-size: 50px;
+    font-size: 5rem;
 }
 
 .about-us-post a:hover {
@@ -256,7 +203,7 @@ h2 {
 .mac-text {
     width: 50%;
     float: right;
-    font-size: 18px;
+    font-size: 1.8rem;
     color: #87949e;
     line-height: 1.5;
 }
@@ -285,20 +232,25 @@ h2 {
     padding: 9% 0;
     background-size: cover;
     text-align: center;
-    font-size: 18px;
+    font-size: 1.8rem;
     color: #87949e;
 }
 
 .opinions-text img+p {
-    font-size: 30px;
+    font-size: 3rem;
     padding: 30px 0;
     color: white;
+    font-family: "RalewayLight";
 }
 
 .opinions-text span {
-    color: #17daa3
+    color: #17daa3;
+    font-family: "RalewayMedium";
 }
 
+.opinions-text p {
+    font-family: "RalewayLight"
+}
 /*---------------------------------------------  our service  --------------------------------------*/
 
 .our-services, .pricing{
@@ -306,6 +258,10 @@ h2 {
     background: #f9f9fb;
     padding: 100px 0;
     overflow: hidden;
+}
+
+.our-services h3 {
+    font-family: "RalewayExtraLight"
 }
 
 .services li {
@@ -316,13 +272,13 @@ h2 {
 
 .about-service {
     float: left;
-    width: 75%;
+    width: 71%;
     text-align: left;
     line-height: 1.5;
 }
 
 .services h3 {
-    font-size: 58px;
+    font-size: 5.8rem;
 }
 
 .services li:nth-child(2n+1) {
@@ -336,7 +292,7 @@ h2 {
 .services i {
     display: inline-block;
     padding-top: 30px;
-    font-size: 37px;
+    font-size: 3.7rem;
 }
 
 /*---------------------------------------------  team  --------------------------------------*/
@@ -356,7 +312,7 @@ h2 {
 }
 
 .team-foto span {
-    font-size: 30px;
+    font-size: 3rem;
     color: white;
     opacity: 0;
 }
@@ -386,33 +342,48 @@ li.light-grey {
 }
 /*---------------------------------------------  pricing  --------------------------------------*/
 .pricing li {
-    width: 22%;
+    width: 23%;
     display: inline-block;
     float: left;
-    margin: 16px;
+    margin: 1%;
     background-color: white;
     border-radius: 7px;
     text-align: left;
 }
 
+.pricing h2:after,
+.team h2:after,
+.our-services h2:after,
+.about-us h2:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 48%;
+    background-color: #17daa3;
+    height: 1px;
+    width: 4%;
+    margin: 0 auto;
+}
+
 .name-purchase {
     color: #d6dade;
-    font-size: 18px;
+    font-size: 1.8rem;
     display: block;
     padding: 0 30px 50px;
 }
 
 .price {
     color: #17daa3;
-    font-size: 60px;
+    font-size: 6rem;
     display: block;
     padding: 30px ;
+    font-family: "RalewayExtraLight"
    
 }
 
 .info-pricing p {
     padding: 60px 30px;
-    font-size: 18px;
+    font-size: 1.8rem;
     color: #87949e;
     line-height: 2;
     border-top: 1px solid #87949e;
@@ -428,9 +399,10 @@ li.light-grey {
     text-decoration: none;
     color: white;
     width: 100%;
-    font-size: 18px;
+    font-size: 1.8rem;
     text-transform: uppercase;
     letter-spacing: 5px;
+    font-family: "ProximaNovaBold";
 } 
 
 .purchase i {
@@ -448,7 +420,7 @@ li.light-grey {
 .map-text {
     width: 50%;
     float: left;
-    font-size: 18px;
+    font-size: 1.8rem;
     color: #87949e;
     line-height: 1.5;
 } 
@@ -467,8 +439,14 @@ li.light-grey {
 .template h2 {
     color: white;
     margin-bottom: 80px;
+    font-family: "RalewayExtraLight"
 }
 
+.template a {
+    text-decoration: none;
+    color: white;
+    font-family: "RalewayExtraLight"
+}
 /*---------------------------------------------  footer  --------------------------------------*/
 
 .footer .wrapper {
@@ -484,7 +462,7 @@ li.light-grey {
 .footer-nav li {
     display: inline-block;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 1.4rem;
     padding-left: 50px
 }
 
